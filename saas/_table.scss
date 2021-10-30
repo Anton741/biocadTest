@@ -1,0 +1,41 @@
+.radios,
+.checkboxs {
+  position: relative;
+  padding: 11px 0 11px 61px;
+  margin-bottom: 24px;
+}
+.radio__input {
+  appearance: none;
+}
+.radio__input:checked + .radio__label:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  top: 14px;
+  left: 14px;
+  background: #63D1BB;
+  z-index: 1;
+}
+.radio__label::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  height: 42px;
+  width: 42px;
+  border: 2px solid #444444;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.radio__label:hover::before,
+.checkbox__lable:hover::before {
+  border: 2px solid #63D1BB;
+}
+.radio__label:active::before,
+.checkbox__lable:active::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}

@@ -1,0 +1,240 @@
+// Refreshe
+::before,
+::after {
+  box-sizing: border-box;
+}
+body{
+  box-sizing: border-box;
+}
+body,h1,h2,h3,h4,p,ul,ol,li {
+  margin: 0;
+  padding: 0;
+}
+ul,ol {
+  list-style: none;
+}
+a,a:hover {
+  text-decoration: none;
+}
+@font-face {
+  font-family: 'TT Norms';
+  font-weight: 500;
+  src: local('Gelasio'), url("../fonts/TTNorms-Bold.ttf") format('ttf');
+}
+.container {
+  width:900px;
+  margin: 0 auto;
+}
+.btn{
+  padding: 14px 23px 14px;
+  background:#34547A;
+  border:none;
+  text-align: center;
+  color:#ffffff;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.16px;
+  &:hover{
+    background:#15D7E2;
+  }
+}
+// FIRST BLOCK FOR SEARGING DEVICE AND GENERATING REPORT
+
+.generation-report{
+  display:flex;
+  flex-direction: column;
+  font-family: "TTNorms";
+  margin:  30px 0 57px;
+}
+.search{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 40px;
+  &__label{
+    font-size: 16px;
+    letter-spacing: 0.16px;
+    line-height: 24px;
+    color: #8C8C8C;
+  }
+  &__input{
+    padding: 8px 8px;
+    margin: 0 20px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.16px;
+    color: #353535;
+  }
+  &__btn{
+    background:#353535;
+  }
+  div{
+    display:flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+}
+
+.detail-report{
+  &__row{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  &__column{
+    margin: 0 65px 0 0;
+  }
+  &__title{
+    display: flex;
+    width: 320px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 30px 0;
+  }
+  &__icon{
+    width: 100px;
+    height: 40px;
+    margin: 0 20px 0 0;
+    background:url("../img/scale.svg");
+    background-repeat: no-repeat;
+    object-fit: contain;
+    }
+    &__select{
+        padding: 12px 130px 11px 15px ;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.16px;
+        margin:0 0 8px 0;
+        -webkit-appearance: none; 
+        background: url('../img/arrow_select.svg') no-repeat right;
+        background-position-x: 191px;
+        border: 1px solid #E9E9E9;
+    } 
+    &__radio{
+      margin: 0 0 52px 0;
+    }
+    &__btn{
+      padding: 15px 39px;
+      background: #4990E2;
+    }
+}
+.radio-list__item{
+  position: relative;
+  padding: 12px 0 0 12px;
+}
+.radio__input {
+  appearance: none;
+}
+.radio__input:checked + .radio__label:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  top: 16px;
+  left: 4px;
+  background: #4990E2;
+  z-index: 1;
+}
+.radio__label::before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  height: 18px;
+  width: 18px;
+  border: 2px solid #C1C1C1;
+  border-radius: 50%;
+  top: 12px;
+  left: 0;
+  z-index: 1;
+}
+.radio__label:active::before,
+.checkbox__lable:active::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+// CHECKBOXS STYLE 
+.checkboxs {
+  position: relative;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__lable::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: url("../img/success.png");
+  top: 25px;
+  left: 55px;
+  z-index: 1;
+}
+.checkbox__input:checked + .checkbox__lable::before {
+  background: url("../img/error.svg");
+}
+// CHARACTERISTICS OF DEVICE
+.device-characteristic{
+  padding: 22px 18px;
+  background: #F7F7F7;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 17px;
+  color:#8C8C8C;
+  b{
+    color:#444651;
+  }
+  &__text{
+    margin: 0 0 11px;
+  }
+  spam{
+    color:#4990E2;
+  }
+}
+.report{
+padding:40px;
+margin: 0 0 86px 0;
+border: 1px dashed #939DA6;
+box-sizing: border-box;
+box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+font-family: "TTNorms";
+&__title{
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+}
+&__table{
+  border-spacing:20px 1px;
+  border-collapse: collapse;
+  margin: 0;
+  width: 840px;
+}
+}
+.report-table{
+  &__title{
+    font-size: 13px;
+    line-height: 15px;
+    font-weight: 300;
+    color: #939DA6;
+    text-align: left;
+    padding: 27px 40px 0 0;
+  }
+  &__cell{
+    padding:24px 44px 24px 0;
+    vertical-align: top;
+  }
+}
+table tr{
+    border-bottom: 1px solid #E9E9E9;
+    padding: 24px;
+}
+
+table tr:first-child, tr:last-child{
+  border:none;
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information</title>
+  <link rel="stylesheet" href="/dist/css/style.min.css">
+</head>
+<body>
+  <div class="main__content">
+    <div class="container">
+    <section class="generation-report">
+      <div class="search">
+        <form>
+          <label for="search" class="search__label">Enter inventory number, guid or bims id</label>
+          <div>
+            <input type="text" class="search__input" name="search" id="search" value = "A-001234">
+            <input type="submit" class="btn search__btn" value="Search">
+          </div>
+        </form>
+      </div>
+      <div class="detail-report">
+        <div class="detail-report__row">
+          <div class="detail-report__column">
+            <div class="detail-report__title">
+              <div class="detail-report__icon"></div>
+              <p>Аналитические весы OHAUS Adventurer АХ324 (B715976163)</p>
+            </div>
+            <select class="detail-report__select">
+              <option value="1">1 month</option>
+              <option value="2">2 months</option>
+              <option value="3">3 months</option>
+            </select>
+            <div class="detail-report__radio radio-list">
+              <div class="radio-list__item">
+                <input  class= "radio__input" type="radio" id="choice1" value="calibration" name = "detail0report__radio">
+                <label for="choice1" class="radio__label">Calibration</label>
+              </div>
+              <div class="radio-list__item">
+                <input class= "radio__input" type="radio" id="choice2" value="measuring" name = "detail0report__radio">
+                <label for="choice2" class="radio__label">Measuring</label>
+              </div>
+              <div class="radio-list__item">
+                <input  class= "radio__input" type="radio" id="choice3" value="using" name = "detail0report__radio">
+                <label for="choice3" class="radio__label">Using</label>
+              </div>
+            </div>
+            <button class="btn detail-report__btn">Generate report</button>
+          </div>
+          <div class="detail-report__column">
+            <div class="device-characteristic">
+              <p class="device-characteristic__text">Тип оборудования: <b>Весы</b> </p>
+              <p class="device-characteristic__text">Статус: <b>Готов к работе</b> </p>
+              <p class="device-characteristic__text">Изготовитель: <b>Ohaus</b> </p>
+              <p class="device-characteristic__text">Модель:  <b>AX-123</b> </p>
+              <p class="device-characteristic__text">Ответственное подразделение (ремонт):<b>Группа обслуживания лабораторного оборудования</b> </p>
+              <p class="device-characteristic__text">Эксплуатирующее подразделение:<b>Химико-аналитическая лаборатория 2.0</b> </p>
+              <p class="device-characteristic__text">МОЛ:  <b>Иванов Иван Иванович</b> </p>
+              <p class="device-characteristic__text">Территория: <b>г. Санкт-Петербург (Нойдорф)</b> </p>
+              <p class="device-characteristic__text">Серийный номер: <b>B715976163</b> </p>
+              <p class="device-characteristic__text">GUID: <spam> <b>508b2a71-662e-4983-ae0c-3cb0c1cd21c5</b> </spam></p>
+              <p class="device-characteristic__text">Bims ID:<spam> <b>49db8db1-585f-4b9e-bbf0-8a59698edc8b</b> </spam></p>
+              <p class="device-characteristic__text">Tam:<spam> <b>А-001234</b> </spam></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="report">
+      <div class="report__title">Calibration report</div>
+        <table class="report__table">
+          <tr>
+            <th class ="report-table__title">Data</th>
+            <th class ="report-table__title">Used buffer solutions</th>
+            <th class ="report-table__title">Slope, % <br/> Norm 95-105 </th>
+            <th class ="report-table__title">Offset, mV <br/> Norm±(0-20) </th>
+            <th class ="report-table__title">User </th>
+          </tr>
+          <tr>
+            <td class ="report-table__cell">
+              04.10.19<br/>
+              10:23
+            </td>
+            <td class ="report-table__cell">
+              <ul class="report-table__list">
+                <li>В1: № 2000460789536: pH 1.09</li>
+                <li>В2: № 2000460789536: pH 2.00></li>
+                <li>В3: № 2000460789536: pH 4.01</li>
+                <li>В4: № 2000460789536: pH 7.00</li>
+                <li>В5: № 2000460789536: pH 9.21</li>
+              </ul>
+              </td>
+              <td class ="report-table__cell checkboxs">
+                <input type="checkbox" class="checkbox__input" id="table-checkbox1">
+              <label for="table-checkbox1" class="checkbox__lable">98.7</label>
+              
+            </td>
+            <td class ="report-table__cell checkboxs">
+              <input type="checkbox" class="checkbox__input" id="table-checkbox2">
+              <label for="table-checkbox2" class="checkbox__lable">-0.3</label>
+              
+            </td>
+            <td class ="report-table__cell">
+              
+              <p>Иванов Генадий Петрович</p>
+            </td>
+          </tr>
+        <tr>
+            <td class ="report-table__cell">
+              04.10.19<br/>
+              10:23
+            </td>
+            <td class ="report-table__cell">
+              <ul class="report-table__list">
+                <li>В1: № 2000460789536: pH 1.09</li>
+                <li>В2: № 2000460789536: pH 2.00></li>
+                <li>В3: № 2000460789536: pH 4.01</li>
+                <li>В4: № 2000460789536: pH 7.00</li>
+                <li>В5: № 2000460789536: pH 9.21</li>
+              </ul>
+              </td>
+              <td class ="report-table__cell checkboxs">
+                <input type="checkbox" class="checkbox__input" id="table-checkbox3">
+              <label for="table-checkbox3" class="checkbox__lable">98.7</label>
+              
+            </td>
+            <td class ="report-table__cell checkboxs">
+              <input type="checkbox" class="checkbox__input" id="table-checkbox4">
+              <label for="table-checkbox4" class="checkbox__lable">-0.3</label>
+            </td>
+            <td class ="report-table__cell">
+              
+              <p>Иванов Генадий Петрович</p>
+            </td>
+          </tr>
+          <tr>
+            <td class ="report-table__cell">
+              04.10.19<br/>
+              10:23
+            </td>
+            <td class ="report-table__cell">
+              <ul class="report-table__list">
+                <li>В1: № 2000460789536: pH 1.09</li>
+                <li>В2: № 2000460789536: pH 2.00></li>
+                <li>В3: № 2000460789536: pH 4.01</li>
+                <li>В4: № 2000460789536: pH 7.00</li>
+                <li>В5: № 2000460789536: pH 9.21</li>
+              </ul>
+              </td>
+              <td class ="report-table__cell checkboxs">
+                <input type="checkbox" class="checkbox__input" id="table-checkbox5">
+              <label for="table-checkbox5" class="checkbox__lable">98.7</label>
+              
+            </td>
+            <td class ="report-table__cell checkboxs">
+              <input type="checkbox" class="checkbox__input" id="table-checkbox6">
+              <label for="table-checkbox6" class="checkbox__lable">-0.3</label>
+              
+            </td>
+            <td class ="report-table__cell">
+              
+              <p>Иванов Генадий Петрович</p>
+            </td>
+          </tr>
+          <tr>
+            <td class ="report-table__cell">
+              04.10.19<br/>
+              10:23
+            </td>
+            <td class ="report-table__cell">
+              <ul class="report-table__list">
+                <li>В1: № 2000460789536: pH 1.09</li>
+                <li>В2: № 2000460789536: pH 2.00></li>
+                <li>В3: № 2000460789536: pH 4.01</li>
+                <li>В4: № 2000460789536: pH 7.00</li>
+                <li>В5: № 2000460789536: pH 9.21</li>
+              </ul>
+              </td>
+              <td class ="report-table__cell checkboxs">
+                <input type="checkbox" class="checkbox__input" id="table-checkbox7">
+              <label for="table-checkbox7" class="checkbox__lable">98.7</label>
+              
+            </td>
+            <td class ="report-table__cell checkboxs">
+              <input type="checkbox" class="checkbox__input" id="table-checkbox8">
+              <label for="table-checkbox8" class="checkbox__lable">-0.3</label>
+              
+            </td>
+            <td class ="report-table__cell">
+              
+              <p>Иванов Генадий Петрович</p>
+            </td>
+          </tr>
+        </table>
+    </section>
+  </div>
+  </div>
+</body>
+</html>
